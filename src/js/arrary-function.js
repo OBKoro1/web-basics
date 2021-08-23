@@ -2,14 +2,23 @@
 
 // forEach实现
 
-Array.prototype.forEach = function (fn, thisArgs) {
+Array.prototype.myForEach = function (fn, thisArgs) {
   if (typeof fn !== 'function') throw 'Error in params'
   let len = this.length // 在遍历的开始就确定遍历次数 对元素增删改查不会影响遍历次数
   // TODO: 遍历使用回调 传递参数
   for (let i = 0; i < len; i++) {
-    fn.call(thisArgs, arr[i], i, arr)
+    fn.call(thisArgs, this[i], i, this)
   }
 }
+
+// 使用
+let oldArr = [1, 2, 3, 4, 5]
+
+oldArr.myForEach((item, index, arr) => {
+  console.log('myForEach', item, index, arr)
+})
+
+
 
 // filter实现
 Array.prototype.myFilter = function (callBack) {
