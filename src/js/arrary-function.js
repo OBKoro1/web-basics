@@ -1,5 +1,16 @@
 // filter map reduce some every 数组实现原理
 
+// forEach实现
+
+Array.prototype.forEach = function (fn, thisArgs) {
+  if (typeof fn !== 'function') throw 'Error in params'
+  let len = this.length // 在遍历的开始就确定遍历次数 对元素增删改查不会影响遍历次数
+  // TODO: 遍历使用回调 传递参数
+  for (let i = 0; i < len; i++) {
+    fn.call(thisArgs, arr[i], i, arr)
+  }
+}
+
 // filter实现
 Array.prototype.myFilter = function (callBack) {
   let newArr = []
