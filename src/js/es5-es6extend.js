@@ -1,3 +1,15 @@
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-07-29 23:59:38
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-11 17:46:53
+ * FilePath     : /js-base/src/js/es5-es6extend.js
+ * description  : 继承
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
+
+// ES5寄生组合继承实现：
 // 父类被继承的对象
 function supFather(name) {
   this.name = name
@@ -7,27 +19,23 @@ supFather.prototype.sayName = function (age) {
   console.log(this.name, 'age')
 }
 
-
 // 子类
 function sub(name, age) {
-  // TODO: 借用父类的方法：修改它的this指向,赋值父类的构造函数里面方法、属性到子类上
+  //  借用父类的方法：修改它的this指向,赋值父类的构造函数里面方法、属性到子类上
   supFather.call(this, name)
   this.age = age
 }
-// TODO: 重写子类的prototype，修正constructor指向
+//  重写子类的prototype，修正constructor指向
 function inheritPrototype(sonFn, fatherFn) {
   sonFn.prototype = Object.create(fatherFn.prototype) // 浅拷贝父类原型上的属性和方法
   sonFn.prototype.constructor = sonFn // 修正constructor指向到继承的那个函数上
 }
-// TODO: 
+//  
 inheritPrototype(sub, supFather)
 // 子类的prototype属性要写在后面 否则会被覆盖
 sub.prototype.sayAge = function () {
   console.log(this.age, 'foo')
 }
-
-
-
 
 // 实例化子类，可以在实例上找到属性、方法
 const instance1 = new sub('OBKoro1', 24)
@@ -37,8 +45,8 @@ console.log(instance1) // {"name":"OBKoro1","colors":["red","blue","green","blac
 console.log(instance2) // {"name":"小明","colors":["red","blue","green"],"age":18}
 
 
-// ES5 实现ES6 extends的例子
-// TODO: 其实就是ES5的寄生组合式继承
+// 使用ES5实现ES6 extends的例子
+//  其实就是上面ES5的寄生组合式继承的那个例子
 function Parent(name){
     this.name = name;
 }
@@ -51,10 +59,10 @@ Parent.prototype.sayName = function(){
 }
 
 function Child(name, age){
-    Parent.call(this, name); // TODO: 相当于调用super
+    Parent.call(this, name); //  相当于调用super
     this.age = age;
 }
-// TODO: 继承原型
+//  继承原型
 function _inherits(Child, Parent){
     Child.prototype = Object.create(Parent.prototype);
     Child.prototype.constructor = Child;
