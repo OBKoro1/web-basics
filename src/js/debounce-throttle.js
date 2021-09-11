@@ -1,4 +1,14 @@
-// TODO: 加强版防抖 防抖+节流
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-07-30 00:38:46
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-11 17:45:07
+ * FilePath     : /js-base/src/js/debounce-throttle.js
+ * description  : 加强版防抖节流与常规防抖、节流
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
+//  加强版防抖 防抖+节流
 // 因为防抖有时候触发的太频繁会导致一次响应都没有，我们希望到了固定的时间必须给用户一个响应
 function throttle(fn, delay, ...args1) {
   let last = 0,
