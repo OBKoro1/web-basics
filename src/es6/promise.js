@@ -1,3 +1,13 @@
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-07-30 15:45:28
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-11 17:37:42
+ * FilePath     : /js-base/src/es6/promise.js
+ * description  : 完整实现promise
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
 // https://cloud.tencent.com/developer/article/1604360
 
 //Promise/A+规范的三种状态
@@ -53,8 +63,8 @@ class MyPromise {
   then(resolveFn, rejectFn) {
     return new MyPromise((resolve, reject) => {
       //包装回调成函数
-      typeof resolveFn !== 'function' ? (resolveFn = (value) => value) : null
-      typeof rejectFn !== 'function' ? (rejectFn = (error) => error) : null
+      if(typeof resolveFn !== 'function')  resolveFn = (value) => value
+      if(typeof rejectFn !== 'function')  rejectFn = (error) => error
 
       // 获取异步回调返回值 如果是Promise,那么等待Promise状态变更,否则直接resolve
       const fulfilledFn = (value) => {
@@ -120,7 +130,7 @@ class MyPromise {
     )
   }
   // 全部完成才是完成 一个失败即失败
-  // TODO: 一般会考用promise手写实现promise.all
+  //  一般会考用promise手写实现promise.all
   all(promiseArr) {
     return new MyPromise((resolve, reject) => {
       let resArr = []
@@ -142,7 +152,7 @@ class MyPromise {
     })
   }
   // 竞态promise 一个出现状态即为最终状态
-  // TODO: 这个可能也会考
+  //  这个可能也会考
   race(promiseArr) {
     return new MyPromise((resolve, reject) => {
       for (let element of promiseArr.values()) {
