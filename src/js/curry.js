@@ -1,14 +1,24 @@
-// 函数科里化
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-07-30 15:03:35
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-11 17:44:22
+ * FilePath     : /js-base/src/js/curry.js
+ * description  : 函数柯里化
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
+
 // 思路: 比较函数参数，不足返回函数等待接收参数，够了就执行
 function curry(fn, ...args) {
-  // TODO: 比较参数 
+  //  比较参数 
   if (args.length < fn.length) {
-    // TODO: 返回函数 等待接收参数
+    //  返回函数 等待接收参数
     return function (...args2) {
       return curry(fn, ...args, ...args2)
     }
   } else {
-    // TODO: 函数参数够了 执行该函数返回结果
+    //  函数参数够了 执行该函数返回结果
     return fn.apply(this, args)
   }
 }
