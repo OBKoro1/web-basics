@@ -2,7 +2,7 @@
  * Author       : OBKoro1
  * Date         : 2021-09-11 16:50:09
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:25:05
+ * LastEditTime : 2021-09-11 17:37:16
  * FilePath     : /js-base/src/scene/event.js
  * description  : 实现一个event类(订阅发布) 含有on off once emit方法
  * koroFileheader VSCode插件
