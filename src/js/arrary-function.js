@@ -1,11 +1,19 @@
-// filter map reduce some every 数组实现原理
-
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-08-06 02:04:50
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-11 17:39:34
+ * FilePath     : /js-base/src/js/arrary-function.js
+ * description  : 数组方法filter map reduce some every 实现原理
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
 // forEach实现
 
 Array.prototype.myForEach = function (fn, thisArgs) {
   if (typeof fn !== 'function') throw 'Error in params'
   let len = this.length // 在遍历的开始就确定遍历次数 对元素增删改查不会影响遍历次数
-  // TODO: 遍历使用回调 传递参数
+  //  遍历使用回调 传递参数
   for (let i = 0; i < len; i++) {
     fn.call(thisArgs, this[i], i, this)
   }
