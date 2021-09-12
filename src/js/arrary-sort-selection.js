@@ -2,7 +2,7 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 00:23:28
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:42:06
+ * LastEditTime : 2021-09-12 23:44:28
  * FilePath     : /js-base/src/js/arrary-sort-selection.js
  * description  : 选择排序
  * 思路: 找到目标值的下标，与当前遍历元素的下标交换。
@@ -25,3 +25,9 @@ function selectionSort(arr) {
     }
   }
 }
+
+// 使用
+let oldArr = [3, 4, 5, 1, 2, 7, 8]
+
+selectionSort(oldArr)
+console.log('排序结果', oldArr)

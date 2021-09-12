@@ -2,7 +2,7 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 00:28:45
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:41:26
+ * LastEditTime : 2021-09-12 23:44:07
  * FilePath     : /js-base/src/js/arrary-sort-modifiedBubbleSort.js
  * description  : 冒泡排序
  * 大的值好像气泡慢慢升至表面
@@ -24,3 +24,8 @@ function modifiedBubbleSort(arr) {
     }
   }
 }
+// 使用
+let oldArr = [3, 4, 5, 1, 2, 7, 8]
+
+modifiedBubbleSort(oldArr)
+console.log('排序结果', oldArr)
