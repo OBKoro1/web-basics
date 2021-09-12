@@ -2,9 +2,9 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 02:04:50
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:39:34
+ * LastEditTime : 2021-09-12 23:36:00
  * FilePath     : /js-base/src/js/arrary-function.js
- * description  : 数组方法filter map reduce some every 实现原理
+ * description  : 数组方法forEach、filter map reduce some every 实现原理
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
  */
