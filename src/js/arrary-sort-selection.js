@@ -11,7 +11,7 @@
  */
 function selectionSort(arr) {
   for (var i = 0; i < arr.length; i++) {
-    var indexMin = i // TODO： 当前下标
+    var indexMin = i // 当前下标
     // j = i i就是已经排序过的
     for (var j = i; j < arr.length; j++) {
       //  寻找目标值 这里是最小值 也可以是其他判断条件
