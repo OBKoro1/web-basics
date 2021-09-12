@@ -1,3 +1,14 @@
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-08-06 02:04:03
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-12 23:45:13
+ * FilePath     : /js-base/src/es6/await.js
+ * description  : await 实现原理: Promise递归自动执行generator函数
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
+
 // 看懂generator执行
 // 1. 获取迭代器
 // 2. 不断执行g.next
