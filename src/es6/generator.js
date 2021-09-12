@@ -1,3 +1,13 @@
+/*
+ * Author       : OBKoro1
+ * Date         : 2021-08-06 02:04:14
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-09-12 23:46:22
+ * FilePath     : /js-base/src/es6/generator.js
+ * description  : generator 实现原理
+ * koroFileheader VSCode插件
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ */
 // generator 实现原理
 // 1. Generator可以理解为一个状态机，内部封装了很多状态，同时返回一个迭代器Iterator对象
 // 2. 迭代器可以被多次调用，达到中断函数的功能
