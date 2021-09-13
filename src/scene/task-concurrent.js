@@ -2,17 +2,20 @@
  * Author       : OBKoro1
  * Date         : 2021-09-10 13:43:57
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-10 16:39:55
- * FilePath     : /js-base/src/scene/task-concurrent1.js
+ * LastEditTime : 2021-09-13 12:24:46
+ * FilePath     : /js-base/src/scene/task-concurrent.js
  * description  : 异步任务，控制并发数目
  * https://juejin.cn/post/6912220538286899207
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
  */
 
+// 思路：每次任务完成 则减去size
+
 class taskConcurrent {
     constructor(size) {
-        this.size = size // 并发数量控制
+        this.max = size
+        this.size = 0 // 并发数量控制
         this.taskQueue = [] // 任务队列
     }
     // 生成异步任务对象
@@ -29,15 +32,15 @@ class taskConcurrent {
         return new Promise((resolve, reject) => {
             const taskObj = this.taskFactory(fn, params, resolve)
             this.taskQueue.unshift(taskObj)
-            if (this.size !== 0) {
+            if (this.size !== this.max) {
                 this.queueOutTask()
             }
         })
     }
     // 从栈中取出任务
     queueOutTask() {
-        // 开始异步任务 减少可以并发的任务数量
-        this.size--
+        // 开始异步任务 增加当前同时并发的任务数量
+        this.size++
         const { resolve, fn, params, reject } = this.taskQueue.pop() // 先进先出
         let taskPromise = this.runTask(fn, params, reject)
         // 返回一个promise promise resolve出一个promise 会自动链式调用
@@ -61,7 +64,7 @@ class taskConcurrent {
     // 异步结束 添加新的异步任务
     pullTask() {
         // 上一个任务有结果了 开放一个并发名额出来
-        this.size++
+        this.size--
         // 任务池 没有任务了
         if (this.taskQueue.length === 0) {
             return
