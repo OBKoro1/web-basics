@@ -10,7 +10,10 @@
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
  */
 
-// 思路：每次任务完成 则减去size
+// 思路：
+// 任务数量通过size来控制
+// 添加Promise异步任务，任务数量没达到max并发数 则直接执行异步
+// 重要: Promise异步任务结束后 减少size 直接从任务池中取出一个新任务来执行
 
 class taskConcurrent {
     constructor(size) {
@@ -39,6 +42,10 @@ class taskConcurrent {
     }
     // 从栈中取出任务
     queueOutTask() {
+        // 任务池 没有任务了
+        if (this.taskQueue.length === 0) {
+            return
+        }
         // 开始异步任务 增加当前同时并发的任务数量
         this.size++
         const { resolve, fn, params, reject } = this.taskQueue.pop() // 先进先出
@@ -65,11 +72,7 @@ class taskConcurrent {
     pullTask() {
         // 上一个任务有结果了 开放一个并发名额出来
         this.size--
-        // 任务池 没有任务了
-        if (this.taskQueue.length === 0) {
-            return
-        }
-        // 从栈中取出任务
+        // 从任务池中取出任务 自动执行异步任务
         this.queueOutTask()
     }
 }
