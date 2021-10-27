@@ -4,10 +4,12 @@
  * LastEditors  : OBKoro1
  * LastEditTime : 2021-10-27 17:43:50
  * FilePath     : /js-base/src/scene/ promise-allsettled.js
- * description  :  promise.allsettled的polify
+ * description  : promise.allsettled的polify
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
  */
+
+// 小红书二面
 
 // 编译数组，执行结果的方式
 Promise.allSettled = function(promises) {
