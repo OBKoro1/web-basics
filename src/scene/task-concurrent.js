@@ -2,7 +2,7 @@
  * Author       : OBKoro1
  * Date         : 2021-09-10 13:43:57
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-13 12:24:46
+ * LastEditTime : 2021-10-27 16:58:21
  * FilePath     : /js-base/src/scene/task-concurrent.js
  * description  : 异步任务，控制并发数目
  * https://juejin.cn/post/6912220538286899207
@@ -14,6 +14,9 @@
 // 任务数量通过size来控制
 // 添加Promise异步任务，任务数量没达到max并发数 则直接执行异步
 // 重要: Promise异步任务结束后 减少size 直接从任务池中取出一个新任务来执行
+
+// 快手二面遇到了。
+// 网上说字节应该也有很多这种考题
 
 class taskConcurrent {
     constructor(size) {
