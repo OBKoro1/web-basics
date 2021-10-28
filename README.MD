@@ -1,13 +1,17 @@
 # 大厂前端需要的能力(持续更新中)
 
-欢迎提issue和PR。
+
+大部分题目附带测试代码, 建议VSCode(其他编辑器应该也有类似的插件，自行查找)用户安装[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)插件，直接右键点击`run code` 即可在编辑器中执行测试代码，查看输出结果。
+
+### 欢迎提issue和PR
+
+欢迎贡献最新面试题，场景题，面试实战题目。
 
 ### JS基础核心-API实现原理
 
 <!-- TODO: 空闲的时候 添加到web网站中 -->
 <!-- TODO: vscode 打断点调试 -->
 
-大部分题目附带测试代码, 建议VSCode(其他编辑器应该也有类似的插件，自行查找)用户安装[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)插件，直接右键点击`run code` 即可在编辑器中执行测试代码，查看输出结果。
 * [加强版防抖节流与常规防抖、节流](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounce-throttle.js)
 * [深拷贝(正则、时间类型处理、循环引用问题解决)](https://github.com/OBKoro1/web-basics/blob/main/src/js/deepClone.js)
 * [继承](https://github.com/OBKoro1/web-basics/blob/main/src/js/es5-es6extend.js)
