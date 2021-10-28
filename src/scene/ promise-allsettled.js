@@ -10,6 +10,7 @@
  */
 
 // 小红书二面
+// 解释：数组内都是异步任务，返回所有异步任务的结果 无论是否成功
 
 // 编译数组，执行结果的方式
 Promise.allSettled = function(promises) {
