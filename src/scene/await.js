@@ -2,13 +2,15 @@
  * Author       : OBKoro1
  * Date         : 2021-09-13 17:09:38
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-13 17:09:40
+ * LastEditTime : 2021-10-28 18:22:06
  * FilePath     : /js-base/src/scene/await.js
  * description  : 实现一个方法，参数是一个 generator 函数，执行结果是执行完所有 generator 中的 yield
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
  */
 
+
+// 实现一个方法，参数是一个 generator 函数，执行结果是执行完所有 generator 中的 yield
 
 // 实际上考察的是await
 // await实现原理: 自动执行generator函数
