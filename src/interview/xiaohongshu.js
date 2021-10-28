@@ -23,6 +23,9 @@ function parse(url) {
 
 // 二面
 // 实现promise.allsettled的polify
+// 解释：数组内都是异步任务，返回所有异步任务的结果 无论是否成功
+
+
 Promise.allSettled = function(promises) {
 }
 
