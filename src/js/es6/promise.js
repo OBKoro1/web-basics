@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-07-30 15:45:28
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:37:42
- * FilePath     : /js-base/src/es6/promise.js
+ * LastEditTime : 2021-10-28 17:13:07
+ * FilePath     : /js-base/src/js/es6/promise.js
  * description  : 完整实现promise
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
@@ -27,7 +27,7 @@ class MyPromise {
     let _resolve = (val) => {
       const run = () => {
         // 状态只能由pending到fulfilled或rejected
-        if (this._status !== PENDING) return 
+        if (this._status !== PENDING) return
         this._status = FULFILLED
         this._value = val
         // "then 方法可以被同一个 promise 调用多次"
@@ -63,8 +63,8 @@ class MyPromise {
   then(resolveFn, rejectFn) {
     return new MyPromise((resolve, reject) => {
       //包装回调成函数
-      if(typeof resolveFn !== 'function')  resolveFn = (value) => value
-      if(typeof rejectFn !== 'function')  rejectFn = (error) => error
+      if (typeof resolveFn !== 'function') resolveFn = (value) => value
+      if (typeof rejectFn !== 'function') rejectFn = (error) => error
 
       // 获取异步回调返回值 如果是Promise,那么等待Promise状态变更,否则直接resolve
       const fulfilledFn = (value) => {
@@ -122,7 +122,7 @@ class MyPromise {
   // 将回调传入.then和catch的resolveFn中 状态改变后 执行回调
   finally(callback) {
     return this.then(
-      (value) => MyPromise.resolve(callback()).then(() => value), 
+      (value) => MyPromise.resolve(callback()).then(() => value),
       (reason) =>
         MyPromise.resolve(callback()).then(() => {
           throw reason
@@ -166,6 +166,28 @@ class MyPromise {
       }
     })
   }
+  // 解释：数组内都是异步任务，返回所有异步任务的结果 无论是否成功
+  allSettled(promisesArr) {
+    // 重写每个promise 将结果返回到数组元素中 使其都能成功
+    const mapPromisesArr = promisesArr.map((p) => {
+      return p
+        .then((value) => {
+          // 直接返回结果
+          return {
+            status: 'fulfilled',
+            value,
+          }
+        })
+        .catch((reason) => {
+          // 直接返回结果
+          return {
+            status: 'rejected',
+            value: reason,
+          }
+        })
+    });
+    return this.all(mapPromisesArr)
+  }
 }
 
 // 使用方法
@@ -185,5 +207,5 @@ p1.then((res) => {
     return 3
   })
   .then((res) => {
-    console.log( '4' ,res)
+    console.log('4', res)
   })
