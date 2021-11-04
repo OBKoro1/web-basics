@@ -2,11 +2,11 @@
  * Author       : OBKoro1
  * Date         : 2021-10-28 17:34:00
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-10-29 16:22:33
+ * LastEditTime : 2021-11-04 15:49:37
  * FilePath     : /js-base/src/interview/alibaba.202110.js
  * description  : 阿里面试题 一个小时
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 
 // 提示：本题是leetcode 困难题
@@ -39,7 +39,6 @@ console.log(countOfAtoms('C4(A(A3B)2)2')) // { A: 14, B: 4, C: 4 }
 function Foo(func, wait, ...params) {
 }
 
-
 /**
  * 对象扁平化
  * 说明：请实现 flatten(input) 函数，input 为一个 javascript 对象（Object 或者 Array），返回值为扁平化后的结果。
@@ -64,51 +63,51 @@ function Foo(func, wait, ...params) {
  *  }
  */
 
-var input = {
-    a: 1,
-    b: [1, 2, { c: true }, [3]],
-    d: { e: 2, f: 3 },
-    g: null,
+const input = {
+  a: 1,
+  b: [1, 2, { c: true }, [3]],
+  d: { e: 2, f: 3 },
+  g: null,
 }
-let flattenRes = flatten(input)
+const flattenRes = flatten(input)
 console.log('flattenRes', flattenRes)
 // 对象扁平化
 function flatten(obj) {
-    let res = {}
-    // 对一个对象扁平化
-    const help = (target, oldKey) => {
-        for (let key in target) {
-            let newKey; // 判断老的key
-            if (oldKey) {
-                // 递归有老key 则组合起来
-                if (Array.isArray(target)) {
-                    // 数组变为 老key[0]
-                    newKey = `${oldKey}[${key}]`
-                } else {
-                    // 对象： 老key.a
-                    newKey = `${oldKey}.${key}`
-                }
-            } else {
-                // 初始化情况下
-                if (Array.isArray(target)) {
-                    // 数组变为 [0] [1]
-                    newKey = `[${key}]`
-                } else {
-                    // 对象变为 'a' 'b'
-                    newKey = key
-                }
-            }
-            if (Object.prototype.toString.call(target[key]) === '[object Object]' || Array.isArray(target[key])) {
-                // 递归数组和对象 传进组织好的老key
-                help(target[key], newKey)
-            } else if (target[key] !== null && target[key] !== undefined) {
-                // 递归出口 常规数据 直接赋值
-                res[newKey] = target[key]
-            }
+  const res = {}
+  // 对一个对象扁平化
+  const help = (target, oldKey) => {
+    for (const key in target) {
+      let newKey // 判断老的key
+      if (oldKey) {
+        // 递归有老key 则组合起来
+        if (Array.isArray(target)) {
+          // 数组变为 老key[0]
+          newKey = `${oldKey}[${key}]`
+        } else {
+          // 对象： 老key.a
+          newKey = `${oldKey}.${key}`
         }
+      } else {
+        // 初始化情况下
+        if (Array.isArray(target)) {
+          // 数组变为 [0] [1]
+          newKey = `[${key}]`
+        } else {
+          // 对象变为 'a' 'b'
+          newKey = key
+        }
+      }
+      if (Object.prototype.toString.call(target[key]) === '[object Object]' || Array.isArray(target[key])) {
+        // 递归数组和对象 传进组织好的老key
+        help(target[key], newKey)
+      } else if (target[key] !== null && target[key] !== undefined) {
+        // 递归出口 常规数据 直接赋值
+        res[newKey] = target[key]
+      }
     }
-    help(obj, '')
-    return res
+  }
+  help(obj, '')
+  return res
 }
 
 
@@ -123,8 +122,6 @@ function flatten(obj) {
 
 
 
-
-
 // 答案慎看
 // 答案慎看
 // 答案慎看
@@ -132,8 +129,6 @@ function flatten(obj) {
 // 答案慎看
 // 答案慎看
 // 答案慎看
-
-
 
 
 
@@ -209,17 +204,10 @@ function flatten(obj) {
 
 //         }
 //     }
-//     // 最后都合并到第一个栈中 
+//     // 最后都合并到第一个栈中
 //     let map = stack.pop()
 //     return Object.fromEntries(map.entries()) // map转对象
 // }
-
-
-
-
-
-
-
 
 // 节流
 // function Foo(func, wait, ...params) {
@@ -233,17 +221,6 @@ function flatten(obj) {
 //         }
 //     }
 // }
-
-
-
-
-
-
-
-
-
-
-
 
 // function flatten(obj) {
 //     let res = {}

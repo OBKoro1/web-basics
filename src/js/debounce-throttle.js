@@ -2,29 +2,29 @@
  * Author       : OBKoro1
  * Date         : 2021-07-30 00:38:46
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:45:07
+ * LastEditTime : 2021-11-04 16:20:35
  * FilePath     : /js-base/src/js/debounce-throttle.js
  * description  : 加强版防抖节流与常规防抖、节流
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 //  加强版防抖 防抖+节流
 // 因为防抖有时候触发的太频繁会导致一次响应都没有，我们希望到了固定的时间必须给用户一个响应
-function throttle(fn, delay, ...args1) {
-  let last = 0,
-    timer = null
+function throttlePlus(fn, delay, ...args1) {
+  let last = 0
+  let timer = null
   return function (...args2) {
     let now = new Date()
     if (now - last > delay) {
       clearTimeout(timer)
       setTimeout(function () {
         last = now
-        fn.apply(this, ...args1m, ...args2)
+        fn.apply(this, ...args1, ...args2)
       }, delay)
     } else {
       // 这个时候表示时间到了，必须给响应
       last = now
-      fn.apply(this, args)
+      fn.apply(this, ...args1, ...args2)
     }
   }
 }
@@ -37,7 +37,7 @@ function throttle(fn, delay, ...args1) {
  */
 function debounce(fn, wait, ...params1) {
   let timer = null
-  return function (...params2)  {
+  return function (...params2) {
     if (timer) {
       // 如果有一个函数在等待执行 清除定时器 下面重新计时
       clearTimeout(timer)
@@ -76,8 +76,6 @@ function throttle(fn, gapTime, ...arr) {
     }
   }
 }
-let actionFn = (a, b) => {
-  console.log('回调', a, b) // 要执行的函数
-}
+
 setInterval(throttle(actionFn, 1000, 'actionFn参数1', '参数2'), 10)
 // 每隔10毫秒都会触发一次throttle，每隔一秒触发一次actionFn回调(1秒内再次触发被丢弃)

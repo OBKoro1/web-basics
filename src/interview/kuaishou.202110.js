@@ -2,11 +2,11 @@
  * Author       : OBKoro1
  * Date         : 2021-10-15 14:56:02
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-10-27 22:21:08
+ * LastEditTime : 2021-11-04 16:26:01
  * FilePath     : /js-base/interview/kuaishou.js
  * description  : 快手一面
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 
 // 给了差不多半个小时时间写
@@ -92,19 +92,24 @@
 
 
 
+
 /**
  * mock api
  */
 const mockApi = (() => {
-    let id = 0;
-    return async (req) => {
-        await new Promise((r) => setTimeout(r, 1000));
-        return {
-            req,
-            id: id++,
-        };
-    };
-})();
+  let id = 0
+  return async (req) => {
+    await new Promise((r) => setTimeout(r, 1000))
+    return {
+      req,
+      id: id++,
+    }
+  }
+})()
+
+// 待实现
+function cacheApi() {
+}
 
 /**
  * 缓存的接口
@@ -112,22 +117,21 @@ const mockApi = (() => {
 const cachedApi = cacheApi(mockApi);
 
 (async () => {
-    console.log('111',
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 一秒钟后输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
+  console.log('111',
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]))
+  // 一秒钟后输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
 
-    console.log(
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 马上输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
+  console.log(
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]),
+  )
+  // 马上输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
 
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log(
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 马上输出 [ { req: "a", id: 2 }, { req: "b", id: 3 }, { req: "a", id: 2 } ]
-})();
+  await new Promise((r) => setTimeout(r, 1000))
+  console.log(
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]),
+  )
+  // 马上输出 [ { req: "a", id: 2 }, { req: "b", id: 3 }, { req: "a", id: 2 } ]
+})()
 
 
 

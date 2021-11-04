@@ -7,7 +7,7 @@
  * description  : 缓存异步接口
  * 快手一面 有点难
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 
 
@@ -21,7 +21,7 @@
  * @returns 缓存接口
  */
 function cacheApi(...args) {
-    console.log('补充代码')
+  console.log('补充代码')
 }
 
 
@@ -29,15 +29,15 @@ function cacheApi(...args) {
  * mock api
  */
 const mockApi = (() => {
-    let id = 0;
-    return async (req) => {
-        await new Promise((r) => setTimeout(r, 1000));
-        return {
-            req,
-            id: id++,
-        };
-    };
-})();
+  let id = 0
+  return async (req) => {
+    await new Promise((r) => setTimeout(r, 1000))
+    return {
+      req,
+      id: id++,
+    }
+  }
+})()
 
 /**
  * 缓存的接口
@@ -45,22 +45,21 @@ const mockApi = (() => {
 const cachedApi = cacheApi(mockApi);
 
 (async () => {
-    console.log('111',
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 一秒钟后输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
+  console.log('111',
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]))
+  // 一秒钟后输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
 
-    console.log(
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 马上输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
+  console.log(
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]),
+  )
+  // 马上输出 [ { req: "a", id: 0 }, { req: "b", id: 1 }, { req: "a", id: 0 } ]
 
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log(
-        await Promise.all([cachedApi("a"), cachedApi("b"), cachedApi("a")])
-    );
-    // 马上输出 [ { req: "a", id: 2 }, { req: "b", id: 3 }, { req: "a", id: 2 } ]
-})();
+  await new Promise((r) => setTimeout(r, 1000))
+  console.log(
+    await Promise.all([cachedApi('a'), cachedApi('b'), cachedApi('a')]),
+  )
+  // 马上输出 [ { req: "a", id: 2 }, { req: "b", id: 3 }, { req: "a", id: 2 } ]
+})()
 
 
 

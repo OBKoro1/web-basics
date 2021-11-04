@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "大厂前端需要掌握的JS基础能力，大厂场景题、大厂面试真题欢迎提issue和PR来丰富场景题",
   "scripts": {
+    "lint": "eslint --ext .js src --fix",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OBKoro1/web-basics.git"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   },
   "publisher": "OBKoro1",
   "author": {
@@ -20,5 +27,14 @@
     "url": "https://github.com/OBKoro1/web-basics/issues",
     "email": "obkoro1@foxmail.com"
   },
-  "homepage": "https://github.com/OBKoro1/web-basics#readme"
+  "homepage": "https://github.com/OBKoro1/web-basics#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6"
+  }
 }

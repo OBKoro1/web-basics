@@ -2,15 +2,14 @@
  * Author       : OBKoro1
  * Date         : 2021-10-29 16:12:55
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-10-29 16:16:43
+ * LastEditTime : 2021-11-04 16:06:16
  * FilePath     : /js-base/src/scene/flattenObj.js
  * description  : 对象扁平化
  * 阿里面试题 第三题
  * 地址： alibaba.202110.js
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
-
 
 /**
  * 对象扁平化
@@ -36,53 +35,22 @@
  *  }
  */
 
- var input = {
-    a: 1,
-    b: [1, 2, { c: true }, [3]],
-    d: { e: 2, f: 3 },
-    g: null,
+const input = {
+  a: 1,
+  b: [1, 2, { c: true }, [3]],
+  d: { e: 2, f: 3 },
+  g: null,
 }
-let flattenRes = flatten(input)
+const flattenRes = flattenObj(input)
 console.log('flattenRes', flattenRes)
 // 对象扁平化
 
 function flattenObj(obj) {
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // 答案慎看
 // 答案慎看
 // 答案慎看
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function flattenObj(obj) {
 //     let res = {}

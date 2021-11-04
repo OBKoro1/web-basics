@@ -1,12 +1,13 @@
+/* eslint-disable no-prototype-builtins */
 /*
  * Author       : OBKoro1
  * Date         : 2021-08-06 01:07:58
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:45:48
+ * LastEditTime : 2021-11-04 16:18:04
  * FilePath     : /js-base/src/js/deepClone.js
  * description  : 深拷贝
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 // 深拷贝
 // 1. 正则、时间类型处理
@@ -24,7 +25,7 @@ function deepClone(obj, hash = new WeakMap()) {
   for (const key in obj) {
     // 循环对象属性 原型链的值 不拷贝
     if (obj.hasOwnProperty(key)) {
-       //  循环递归拷贝
+      //  循环递归拷贝
       copy[key] = deepClone(obj[key], hash)
     }
   }

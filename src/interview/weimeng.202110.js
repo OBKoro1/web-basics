@@ -2,32 +2,32 @@
  * Author       : OBKoro1
  * Date         : 2021-10-11 15:08:17
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-10-27 23:20:29
+ * LastEditTime : 2021-11-04 16:25:05
  * FilePath     : /js-base/src/interview/weimeng.js
  * description  :  微盟一面
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 
 const arr = [{
-    id: 0,
-    data: 1
+  id: 0,
+  data: 1,
 }, {
-    pid: 0,
-    id: 1,
-    data: 2
+  pid: 0,
+  id: 1,
+  data: 2,
 }, {
-    pid: 0,
-    id: 2,
-    data: 3,
+  pid: 0,
+  id: 2,
+  data: 3,
 }, {
-    pid: 2,
-    id: 3,
-    data: 4
+  pid: 2,
+  id: 3,
+  data: 4,
 }, {
-    pid: 3,
-    id: 4,
-    data: 5,
+  pid: 3,
+  id: 4,
+  data: 5,
 }]
 
 // const tree = [{
@@ -60,7 +60,8 @@ function toTree(arr) {
 }
 
 
-
+const toTreeArr = toTree(arr)
+console.log('checkoutArr', JSON.stringify(toTreeArr))
 
 
 
@@ -68,7 +69,7 @@ function toTree(arr) {
 
 // 实现一个函数 超过一定时间 则异步失败
 
-// 补充代码 
+// 补充代码
 function timeout(fn, time) {
 }
 
@@ -86,26 +87,51 @@ function timeout(fn, time) {
 
 
 
+
+
+
+
+
+
+// 答案慎看
+// 答案慎看
+// 答案慎看
+// 答案慎看
+// 答案慎看
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 解析数组成树
-function toTree(arr) {
-    const cache = {} // map映射表 
-    const result = [] // 初始化结果
-    // 构建映射表
-    arr.forEach((item) => {
-        cache[item.id] = item
-    })
-    arr.forEach((item) => {
-        const parent = cache[item.pid]
-        if (!parent) {
-            result.push(item) // 初始化添加元素
-        } else {
-            // 添加本元素到父元素的children 通过对象指针的引用机制添加到父元素中
-            ; (parent.children || (parent.children = [])).push(item)
-        }
-    })
-    // 源数据
-    return result
-}
+// function toTree(arr) {
+//     const cache = {} // map映射表
+//     const result = [] // 初始化结果
+//     // 构建映射表
+//     arr.forEach((item) => {
+//         cache[item.id] = item
+//     })
+//     arr.forEach((item) => {
+//         const parent = cache[item.pid]
+//         if (!parent) {
+//             result.push(item) // 初始化添加元素
+//         } else {
+//             // 添加本元素到父元素的children 通过对象指针的引用机制添加到父元素中
+//             ; (parent.children || (parent.children = [])).push(item)
+//         }
+//     })
+//     // 源数据
+//     return result
+// }
 
 // function checkoutArr(oldArr) {
 //     let newArr = []
@@ -137,23 +163,21 @@ function toTree(arr) {
 //     });
 //     return newArr
 // }
-const toTreeArr = toTree(arr)
-console.log('checkoutArr', JSON.stringify(toTreeArr))
 
 
 
 // 实现一个函数 超过一定时间 则异步失败
-function timeout(fn, time) {
-    return function(...params) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                reject('超时')
-            }, time)
-            fn(...params).then(res => {
-                resolve(res)
-            }).catch(err => {
-                reject(err)
-            })
-        })
-    }
-}
+// function timeout(fn, time) {
+//     return function(...params) {
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 reject('超时')
+//             }, time)
+//             fn(...params).then(res => {
+//                 resolve(res)
+//             }).catch(err => {
+//                 reject(err)
+//             })
+//         })
+//     }
+// }

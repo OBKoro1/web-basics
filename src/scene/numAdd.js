@@ -6,25 +6,25 @@
  * FilePath     : /js-base/src/scene/numAdd.js
  * description  : 如何通过代码解决浮点数计算不准的问题以及浮点数不准的原因。
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 
 // 思路：小数转整数来操作
 function add(...args) {
-    // 最小的小数有几位
-    const maxLen = Math.max.apply(
-        null,
-        args.map(item => {
-            const str = String(item).split('.')[1]
-            return str ? str.length : 0
-        })
-    )
-    // 最小小数 转成整数 需要的倍数
-    let baseMultiple = 10 ** maxLen
-    return (
-        // 小数乘以倍数 再除以倍数 还原小数点
-        args.reduce((sum, cur) => sum + cur * baseMultiple, 0) / baseMultiple
-    )
+  // 最小的小数有几位
+  const maxLen = Math.max.apply(
+    null,
+    args.map((item) => {
+      const str = String(item).split('.')[1]
+      return str ? str.length : 0
+    }),
+  )
+  // 最小小数 转成整数 需要的倍数
+  const baseMultiple = 10 ** maxLen
+  return (
+  // 小数乘以倍数 再除以倍数 还原小数点
+    args.reduce((sum, cur) => sum + cur * baseMultiple, 0) / baseMultiple
+  )
 }
 console.log(add(0.1, 0.2)) // => 0.3
 console.log(add(10, 11)) // => 21

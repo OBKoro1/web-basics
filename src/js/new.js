@@ -1,12 +1,13 @@
+/* eslint-disable no-underscore-dangle */
 /*
  * Author       : OBKoro1
  * Date         : 2021-07-30 15:00:30
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:50:21
+ * LastEditTime : 2021-11-04 16:10:27
  * FilePath     : /js-base/src/js/new.js
  * description  : new实现原理
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
 // 思路：执行函数，挂载原型、判断返回值
 function myNew(...arr) {

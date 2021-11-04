@@ -9,10 +9,10 @@
  * 这是一道leetcode题目 困难题
  *  稍微变了一下 改了一下最后输出 726题
  * koroFileheader VSCode插件
- * Copyright (c) 2021 by OBKoro1, All Rights Reserved. 
+ * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
  */
-// 
-// 
+//
+//
 
 /**
  * 根据表达式计算字母数
@@ -30,35 +30,15 @@
 
 // leetcode 困难题
 
+function countOfAtoms(formula) {
 
-function countOfAtoms (formula) {
-    
 }
-
-
-
-
-
-
 
 console.log(countOfAtoms('A2B3')) // { A: 2, B: 3 }
 console.log(countOfAtoms('A(A3B)2')) // { A: 7, B: 2 }
 console.log(countOfAtoms('C4(A(A3B)2)2')) // { A: 14, B: 4, C: 4 }
 
-
-
-
-
-
-
-
-
-
-
 // 答案慎看
-
-
-
 
 // 栈+哈希表
 // function countOfAtoms(formula) {
@@ -120,7 +100,7 @@ console.log(countOfAtoms('C4(A(A3B)2)2')) // { A: 14, B: 4, C: 4 }
 
 //         }
 //     }
-//     // 最后都合并到第一个栈中 
+//     // 最后都合并到第一个栈中
 //     let map = stack.pop()
 //     return Object.fromEntries(map.entries()) // map转对象
 // }
