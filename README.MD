@@ -1,7 +1,11 @@
 # 大厂前端需要的能力(持续更新中)
 
+大厂前端需要掌握的JS基础能力，大厂场景题、大厂面试真题欢迎提issue和PR来丰富场景题。
 
-大部分题目附带测试代码, 建议VSCode(其他编辑器应该也有类似的插件，自行查找)用户安装[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)插件，直接右键点击`run code` 即可在编辑器中执行测试代码，查看输出结果。
+### 运行测试代码
+
+
+本仓库大部分题目附带测试代码, 建议VSCode用户安装[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)插件，直接右键点击`run code` 即可在编辑器中执行测试代码，查看输出结果。
 
 ### 欢迎提issue和PR
 
@@ -10,6 +14,7 @@
 ### JS基础核心-API实现原理
 
 <!-- TODO: 空闲的时候 添加到web网站中 -->
+<!-- TODO: 添加工程化工具、整理成文档 -->
 <!-- TODO: vscode 打断点调试 -->
 
 * [加强版防抖节流与常规防抖、节流](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounce-throttle.js)
