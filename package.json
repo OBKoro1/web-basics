@@ -1,0 +1,24 @@
+{
+  "name": "web-basics",
+  "version": "1.0.0",
+  "description": "大厂前端需要掌握的JS基础能力，大厂场景题、大厂面试真题欢迎提issue和PR来丰富场景题",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OBKoro1/web-basics.git"
+  },
+  "publisher": "OBKoro1",
+  "author": {
+    "name": "OBKoro1",
+    "email": "obkoro1@foxmail.com",
+    "url": "http://obkoro1.com/web_accumulate/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OBKoro1/web-basics/issues",
+    "email": "obkoro1@foxmail.com"
+  },
+  "homepage": "https://github.com/OBKoro1/web-basics#readme"
+}

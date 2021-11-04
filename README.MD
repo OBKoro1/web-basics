@@ -1,21 +1,24 @@
 # 大厂前端需要的能力(持续更新中)
 
-大厂前端需要掌握的JS基础能力，大厂场景题、大厂面试真题欢迎提issue和PR来丰富场景题。
+本仓库在于收集和整理大厂前端需要掌握能力，分为JS基础能力，大厂场景题、大厂面试真题。
 
-### 运行测试代码
-
-
-本仓库大部分题目附带测试代码, 建议VSCode用户安装[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)插件，直接右键点击`run code` 即可在编辑器中执行测试代码，查看输出结果。
-
-### 欢迎提issue和PR
-
-欢迎贡献最新面试题，场景题，面试实战题目。
-
-### JS基础核心-API实现原理
+希望能够帮助大家提升自己的能力，在面试的时候能够游刃有余，轻松拿到高薪offer。
 
 <!-- TODO: 空闲的时候 添加到web网站中 -->
 <!-- TODO: 添加工程化工具、整理成文档 -->
 <!-- TODO: vscode 打断点调试 -->
+
+#### 欢迎提issue和PR
+
+欢迎贡献最新面试题，场景题，面试实战题目。
+
+### 运行测试代码
+
+<!-- TODO: 1 -->
+[快速开始]()
+
+### JS基础核心-API实现原理
+
 
 * [加强版防抖节流与常规防抖、节流](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounce-throttle.js)
 * [深拷贝(正则、时间类型处理、循环引用问题解决)](https://github.com/OBKoro1/web-basics/blob/main/src/js/deepClone.js)
@@ -105,3 +108,11 @@
 * [如何通过代码解决浮点数计算不准的问题以及浮点数不准的原因](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numAdd.js)
 * [获取页面中的所有标签名](https://github.com/OBKoro1/web-basics/blob/main/src/scene/getAllTag.js)
 * [求出一个二维数组[[A, B], [a, b], [1, 2]]所有排列组合](https://github.com/OBKoro1/web-basics/blob/main/src/scene/findAll.js)
+
+### License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+### 联系我
+
+[掘金](https://juejin.im/user/78820536236951)、[前端进阶积累](http://obkoro1.com/web_accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)、[微信](https://raw.githubusercontent.com/OBKoro1/articleImg_src/master/weibo_img_move/005Y4rCogy1fsnslyz5pnj309j0cdgm6.jpg):OBkoro1、邮箱：obkoro1@foxmail.com
