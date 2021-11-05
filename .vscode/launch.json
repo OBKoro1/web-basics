@@ -1,0 +1,19 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node", // 使用node.js 运行
+            "request": "launch",
+            "name": "在vscode中调试js代码",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            // 修改引用地址 "src/scene/event-loop.js", 在vscode中调试对应文件代码 
+            // 调试过程中：右侧是代码变量 输出在下方的调试控制台中
+            "program": "${workspaceFolder}/src/scene/event-loop.js" // 修改引用地址
+        }
+    ]
+}
