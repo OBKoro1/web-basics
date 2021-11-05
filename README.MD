@@ -13,7 +13,7 @@
  1. 项目目录结构介绍
  2. 运行代码和调试代码
 
-[快速开始](https://github.com/OBKoro1/web-basics/blob/main/Quick-start.MD)
+[快速开始](https://github.com/OBKoro1/web-basics/blob/main/Quick-start.md)
 
 ### JS基础核心-API实现原理
 
