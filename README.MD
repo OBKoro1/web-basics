@@ -5,19 +5,19 @@
 希望能够帮助大家提升自己的能力，在面试的时候能够游刃有余，轻松拿到高薪offer。
 
 <!-- TODO: 空闲的时候 添加到web网站中 -->
-<!-- TODO: 添加工程化工具、整理成文档 -->
-<!-- TODO: vscode 打断点调试 -->
 
 #### 欢迎提issue和PR
 
 欢迎贡献最新面试题，场景题，面试实战题目。
 
-### 快速开始 & 如何运行代码 & 如何调试代码
+## 快速开始
+
+ 1. 项目目录结构介绍
+ 2. 运行代码和调试代码
 
 [快速开始](https://github.com/OBKoro1/web-basics/blob/main/Quick-start.MD)
 
 ### JS基础核心-API实现原理
-
 
 * [加强版防抖节流与常规防抖、节流](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounce-throttle.js)
 * [深拷贝(正则、时间类型处理、循环引用问题解决)](https://github.com/OBKoro1/web-basics/blob/main/src/js/deepClone.js)
@@ -123,14 +123,6 @@
 ### 求Star
 
 如果觉得还不错的话，就给个 [Star](https://github.com/OBKoro1/koro1FileHeader) ⭐️ 鼓励一下我吧~
-
-### 欢迎赞助
-
-如果觉得插件还不错，对你有所帮助的话，就请我喝杯水吧~
-
-十块八块不嫌多，三块五块也是爱 😘
-
-![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
 
 ## 联系我
 
