@@ -40,5 +40,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-loop-func': 'off',
     'arrow-body-style': 'off',
+    'no-proto': 'off',
+    'no-prototype-builtins': 'off',
   },
 }

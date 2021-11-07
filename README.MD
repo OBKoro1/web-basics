@@ -22,6 +22,7 @@
 * [继承](https://github.com/OBKoro1/web-basics/blob/main/src/js/es5-es6extend.js)
 * [instanceOf实现原理](https://github.com/OBKoro1/web-basics/blob/main/src/js/intanceof.js)
 * [new实现原理](https://github.com/OBKoro1/web-basics/blob/main/src/js/new.js)
+* [Object.assgin的模拟实现](https://github.com/OBKoro1/web-basics/blob/main/src/js/Object-assign.js)
 * [数组方法forEach、filter map reduce some every 实现原理](https://github.com/OBKoro1/web-basics/blob/main/src/js/arrary-function.js)
 * [实现数组的splice方法](https://github.com/OBKoro1/web-basics/blob/main/src/js/array-splice.js)
 * [reduce组合函数、reduce多维数组展开](https://github.com/OBKoro1/web-basics/blob/main/src/js/array-reduce.js)
