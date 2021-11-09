@@ -106,7 +106,10 @@
 * [如何通过代码解决浮点数计算不准的问题以及浮点数不准的原因](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numAdd.js)
 * [获取页面中的所有标签名](https://github.com/OBKoro1/web-basics/blob/main/src/scene/getAllTag.js)
 * [求出一个二维数组[[A, B], [a, b], [1, 2]]所有排列组合](https://github.com/OBKoro1/web-basics/blob/main/src/scene/findAll.js)
-
+* [2021-11-9: event-loop输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/event-loop2.js)
+* [2021-11-9: 拼多多 原型链输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/proto-console.js)
+* [2021-11-9: 判断符号组成的字符串是否正确](https://github.com/OBKoro1/web-basics/blob/main/src/scene/symbol-close.js)
+* [2021-11-9: 找到数组中相加为target的两个值](https://github.com/OBKoro1/web-basics/blob/main/src/scene/find-target.js)
 ### 欢迎赞助
 
 如果觉得插件还不错，对你有所帮助的话，就请我喝杯水吧~

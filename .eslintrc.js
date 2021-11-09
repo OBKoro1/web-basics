@@ -42,5 +42,6 @@ module.exports = {
     'arrow-body-style': 'off',
     'no-proto': 'off',
     'no-prototype-builtins': 'off',
+    'prefer-promise-reject-errors': 'off',
   },
 }
