@@ -3,8 +3,8 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 02:04:14
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-11-04 16:16:56
- * FilePath     : /js-base/src/es6/generator.js
+ * LastEditTime : 2022-01-12 15:41:08
+ * FilePath     : /js-base/src/js/es6/generator.js
  * description  : generator 实现原理
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -81,4 +81,5 @@ const res1 = g.next() // {value: "result1", done: false}
 const res2 = g.next() // {value: "result2", done: false}
 const res3 = g.next() // {value: "result3", done: false}
 const res4 = g.next() // {value: undefined, done: true}
-console.log('g', g, res1, res2, res3, res4)
+const res5 = g.next() // {value: undefined, done: true}
+console.log('g', g, res1, res2, res3, res4, res5)

@@ -16,7 +16,9 @@ Array.prototype.reduce1 = function (cb, prev) {
 const res = [1, 2, 3, 4, 5].reduce1((prev, curr, index, arr) => prev + curr)
 
 // 多维数组展开
-const flatFnn = (arr) => arr.reduce((prev, curr) => (arr.isArray(curr) ? prev.concat(flatFnn(curr)) : prev.concat(curr)))
+const flatFnn = (arr) => arr.reduce(
+  (prev, curr) => (Array.isArray(curr) ? prev.concat(flatFnn(curr)) : prev.concat(curr)), [],
+)
 
 let oldArr = [1, [2, [3, [4, [5]]]]]
 let newArr = flatFnn(oldArr)
@@ -56,11 +58,11 @@ const fn1 = function (a, b) {
 }
 
 const fn2 = function (str) {
-  return `第二个函数处理${str}`
+  return `${str}第二个函数处理`
 }
 
 const fn3 = function (str) {
-  return `第三个函数处理${str}`
+  return `${str}第三个函数处理`
 }
 const final = compose(fn3, fn2, fn1) // 接受函数 从后往前冲
 const res2 = final('a', 'b') // 依次执行 返回结果
