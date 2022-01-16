@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-09-13 12:41:01
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-13 13:09:45
- * FilePath     : /js-base/src/scene/uniqueArray2.js
+ * LastEditTime : 2022-01-16 15:19:46
+ * FilePath     : /js-base/src/js/scence/uniqueArray/uniqueArray2.js
  * description  : 数组的对象key值相同的去重
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -71,3 +71,4 @@ console.log('简单对象元素 转字符来比对', unique3(oldArr))
 // { id: "威廉古堡", artist: "两个对象一模一样" },
 // { id: "威廉古堡", artist: "两个对象一模一样" },
 // { artist: "两个对象一模一样", id: "威廉古堡" }, // 顺序不一样
+

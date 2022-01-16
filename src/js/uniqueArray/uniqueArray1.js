@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-09-13 13:09:24
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-13 13:53:13
- * FilePath     : /js-base/src/scene/uniqueArray1.js
+ * LastEditTime : 2022-01-16 14:46:40
+ * FilePath     : /js-base/src/js/常见场景/数组基本类型去重.js
  * description  : 数组基本类型去重
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
