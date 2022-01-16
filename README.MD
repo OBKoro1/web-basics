@@ -136,8 +136,10 @@
 
 #### [koroFileHeader](https://github.com/OBKoro1/koro1FileHeader)
 
-1. 它是用于生成文件头部注释以及函数注释的，帮助我们养成良好的编码习惯，规范整个团队风格。
-2. 插件从18年5月维护至今, 2.7K+ Star，插件支持所有主流语言,功能强大，灵活方便，文档齐全，食用简单！
+1. 它是用于一键生成文件头部注释并自动更新最后编辑人和编辑时间、函数注释自动生成和参数提取。
+2. 插件支持所有主流语言,功能强大，配置灵活方便，文档齐全，食用简单！
+3. 插件从2018年5月维护至今, 3K+ Star，关闭issue 300+
+4. 目前拥有250K+的用户，VSCode图表统计日安装用户100多-400多人，帮助用户养成良好的编码习惯，规范整个团队风格。
 
 ![头部注释](https://raw.githubusercontent.com/OBKoro1/koro1FileHeader/master/images/example.gif)
 
@@ -147,7 +149,7 @@
 
 chrome插件**通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
 
-![](https://github.com/OBKoro1/stop-mess-around/raw/dev/static/start.gif?raw=true)
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/example/run-introduction.gif?raw=true)
 #### [AutoCommit](https://github.com/OBKoro1/autoCommit)
 
 这是一个用于Git自动commit的VSCode插件，它可以用来补充之前忘记提交commit，帮助你把首页的绿色格子填满。
