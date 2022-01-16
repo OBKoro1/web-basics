@@ -90,6 +90,7 @@
 
 ### 大厂实战场景代码题
 
+* [实现一个简单的模板引擎（用replace 和不用 replace）](https://github.com/OBKoro1/web-basics/blob/main/src/scene/template.js)
 * [对象扁平化](https://github.com/OBKoro1/web-basics/blob/main/src/scene/flattenObj.js)
 * [根据表达式计算字母数](https://github.com/OBKoro1/web-basics/blob/main/src/scene/countOfAtoms.js)
 * [异步任务，控制并发数目](https://github.com/OBKoro1/web-basics/blob/main/src/scene/task-concurrent.js)
