@@ -147,7 +147,7 @@
 
 #### [stop-mess-around](https://github.com/OBKoro1/stop-mess-around)
 
-chrome插件**通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
+减少摸鱼的时间和频率的Chrome插件：**在上班/学习期间很容易下意识的打开摸鱼网站，插件帮助我们减少摸鱼的时间和频率，提高我们上班和学习的效率，节省时间用于学习提升自己或者享受生活**。
 
 ![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/example/run-introduction.gif?raw=true)
 #### [AutoCommit](https://github.com/OBKoro1/autoCommit)
