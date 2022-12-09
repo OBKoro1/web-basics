@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-07-30 00:38:46
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-11-04 16:20:35
- * FilePath     : /js-base/src/js/debounce-throttle.js
+ * LastEditTime : 2022-12-09 11:56:28
+ * FilePath     : /web-basics/src/js/debounceThrottle/debounce-throttle.js
  * description  : 加强版防抖节流与常规防抖、节流
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -17,7 +17,7 @@ function throttlePlus(fn, delay, ...args1) {
     let now = new Date()
     if (now - last > delay) {
       clearTimeout(timer)
-      setTimeout(function () {
+      timer = setTimeout(function () {
         last = now
         fn.apply(this, ...args1, ...args2)
       }, delay)

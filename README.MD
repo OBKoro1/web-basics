@@ -21,6 +21,7 @@
 * [数组基本类型去重](https://github.com/OBKoro1/web-basics/blob/main/src/js/uniqueArray/uniqueArray1.js)
 * [数组的对象key值相同的去重](https://github.com/OBKoro1/web-basics/blob/main/src/js/uniqueArray/uniqueArray2.js)
 * [加强版防抖节流与常规防抖、节流](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounceThrottle/debounce-throttle.js)
+* [节流函数最后一次调用必须执行](https://github.com/OBKoro1/web-basics/blob/main/src/js/debounceThrottle/throttleLastRun.js)
 * [深拷贝(正则、时间类型处理、循环引用问题解决)](https://github.com/OBKoro1/web-basics/blob/main/src/js/deepClone/deepClone.js)
 * [继承](https://github.com/OBKoro1/web-basics/blob/main/src/js/extend/es5-es6extend.js)
 * [instanceOf实现原理](https://github.com/OBKoro1/web-basics/blob/main/src/js/intanceof/intanceof.js)
