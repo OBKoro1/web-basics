@@ -115,6 +115,12 @@
 * [2021-11-9: 找到数组中相加为target的两个值](https://github.com/OBKoro1/web-basics/blob/main/src/scene/find-target.js)
 * [ 每4秒输出一次helloWorld, 输出3次](https://github.com/OBKoro1/web-basics/blob/main/src/scene/reportInterval/reportInterval.js)
 
+### 算法题
+
+* [删除字符串中出现次数最少的字符](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/deleteLowerStr/index.js)
+
+
+
 ### 欢迎赞助
 
 如果觉得插件还不错，对你有所帮助的话，就请我喝杯水吧~
