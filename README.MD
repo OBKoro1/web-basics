@@ -114,6 +114,8 @@
 * [2021-11-9: 判断符号组成的字符串是否正确](https://github.com/OBKoro1/web-basics/blob/main/src/scene/symbol-close.js)
 * [2021-11-9: 找到数组中相加为target的两个值](https://github.com/OBKoro1/web-basics/blob/main/src/scene/find-target.js)
 * [ 每4秒输出一次helloWorld, 输出3次](https://github.com/OBKoro1/web-basics/blob/main/src/scene/reportInterval/reportInterval.js)
+* [数字转汉语输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numberToCn/numberToCn.js)
+* [汉语转数字输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numberToCn/cnToNumber.js)
 
 ### 算法题
 
