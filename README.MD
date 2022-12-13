@@ -116,6 +116,7 @@
 * [ 每4秒输出一次helloWorld, 输出3次](https://github.com/OBKoro1/web-basics/blob/main/src/scene/reportInterval/reportInterval.js)
 * [数字转汉语输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numberToCn/numberToCn.js)
 * [汉语转数字输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numberToCn/cnToNumber.js)
+* [实现compose函数,类似koa洋葱组件](https://github.com/OBKoro1/web-basics/blob/main/src/scene/compose/compose.js)
 
 ### 算法题
 
