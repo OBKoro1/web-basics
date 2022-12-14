@@ -98,7 +98,7 @@
 * [实战event-loop任务优先级](https://github.com/OBKoro1/web-basics/blob/main/src/scene/event-loop.js)
 * [实现一个event类(订阅发布) 含有on off once emit方法](https://github.com/OBKoro1/web-basics/blob/main/src/scene/event.js)
 * [缓存异步接口](https://github.com/OBKoro1/web-basics/blob/main/src/scene/cacheApi.js)
-* [数据转换数组](https://github.com/OBKoro1/web-basics/blob/main/src/scene/dataToTree.js)
+* [数据转换数组](https://github.com/OBKoro1/web-basics/blob/main/src/scene/arrToTree/dataToTree.js)
 * [实现红绿灯算法](https://github.com/OBKoro1/web-basics/blob/main/src/scene/traffic-lights.js)
 * [累乘和累乘缓存](https://github.com/OBKoro1/web-basics/blob/main/src/scene/multiplication.js)
 * [解析URL链接](https://github.com/OBKoro1/web-basics/blob/main/src/scene/url-parse.js)
