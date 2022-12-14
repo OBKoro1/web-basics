@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-09-10 13:43:57
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-11-04 16:03:41
- * FilePath     : /js-base/src/scene/task-concurrent.js
+ * LastEditTime : 2022-12-14 21:27:48
+ * FilePath     : /web-basics/src/scene/task-concurrent.js
  * description  : 异步任务，控制并发数目
  * https://juejin.cn/post/6912220538286899207
  * koroFileheader VSCode插件
@@ -39,7 +39,8 @@ class TaskConcurrent {
   addTask(fn, ...params) {
     return new Promise((resolve, reject) => {
       const taskObj = this.taskFactory(fn, params, resolve)
-      this.taskQueue.unshift(taskObj)
+      // 添加到栈尾
+      this.taskQueue.push(taskObj)
       if (this.size !== this.max) {
         this.queueOutTask()
       }
@@ -56,7 +57,7 @@ class TaskConcurrent {
     this.size++
     const {
       resolve, fn, params, reject,
-    } = this.taskQueue.pop() // 先进先出
+    } = this.taskQueue.shift() // 先进先出
     const taskPromise = this.runTask(fn, params, reject)
     // 返回一个promise promise resolve出一个promise 会自动链式调用
     resolve(taskPromise)
@@ -89,27 +90,28 @@ class TaskConcurrent {
 
 
 
-// 模拟异步任务1
 // 调用addTask一个一个添加异步任务
 const task = (timeout) => new Promise((resolve) => setTimeout(() => {
   resolve(timeout) // 返回值
 }, timeout))
-const taskList = [5000, 3000, 1000, 10300, 8000, 2000, 4000, 5000]
-async function startNoConcurrentControl() {
-  // 初始化并发池
-  const cc = new TaskConcurrent(2)
-  console.time('异步执行时间')
-  // 添加所有异步任务
-  const resArr = await Promise.all(taskList.map((item) => cc.addTask(task, item)))
-  console.log('异步任务返回值', resArr)
-  console.timeEnd('异步执行时间')
-}
-startNoConcurrentControl()
+
+// 模拟异步任务1
+// const taskList = [5000, 3000, 1000, 10300, 8000, 2000, 4000, 5000]
+// async function startNoConcurrentControl() {
+//   // 初始化并发池
+//   const cc = new TaskConcurrent(2)
+//   console.time('异步执行时间')
+//   // 添加所有异步任务
+//   const resArr = await Promise.all(taskList.map((item) => cc.addTask(task, item)))
+//   console.log('异步任务返回值', resArr)
+//   console.timeEnd('异步执行时间')
+// }
+// startNoConcurrentControl()
 
 // 模拟异步2 循环添加异步任务
 function start() {
   const taskConcurrent2Instance = new TaskConcurrent(2)
-  let count = 5
+  let count = 10
   // 组织参数
   while (count--) {
     const p = taskConcurrent2Instance.addTask(task, count * 1000)
