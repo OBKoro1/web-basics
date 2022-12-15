@@ -122,6 +122,13 @@
 
 * [删除字符串中出现次数最少的字符](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/deleteLowerStr/index.js)
 
+### 场景设计
+
+抛砖引玉，一家之言，希望能够触发一些思考。
+
+* [虚拟列表原理](https://github.com/OBKoro1/web-basics/blob/main/src/sceneDesign/大数据列表.md)
+* [前端接口防刷](https://github.com/OBKoro1/web-basics/blob/main/src/sceneDesign/前端接口防刷.md)
+* [转盘组件设计](https://github.com/OBKoro1/web-basics/blob/main/src/sceneDesign/转盘组件设计.md)
 
 
 ### 欢迎赞助
