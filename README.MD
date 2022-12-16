@@ -121,7 +121,8 @@
 ### 算法题
 
 * [删除字符串中出现次数最少的字符](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/deleteLowerStr/index.js)
-* [编辑距离](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/editDiatance/editDiatance.js)
+* [72 编辑距离](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/editDiatance/editDiatance.js)
+* [844. 比较含退格的字符串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/backspaceStringCompare/backspaceStringCompare.js)
 
 ### 场景设计
 
