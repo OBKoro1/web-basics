@@ -118,6 +118,7 @@
 * [汉语转数字输出](https://github.com/OBKoro1/web-basics/blob/main/src/scene/numberToCn/cnToNumber.js)
 * [实现compose函数,类似koa洋葱组件](https://github.com/OBKoro1/web-basics/blob/main/src/scene/compose/compose.js)
 * [虚拟dom转真实dom](https://github.com/OBKoro1/web-basics/blob/main/src/scene/vDomToDom/vDomToDom.js)
+* [Promise.retry 成功后 resolve 结果，失败后重试，尝试超过一定次数才真正的 reject](https://github.com/OBKoro1/web-basics/blob/main/src/scene/promise/retry.js)
 
 ### 算法题
 
