@@ -123,8 +123,32 @@
 ### 算法题
 
 * [删除字符串中出现次数最少的字符](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/deleteLowerStr/index.js)
-* [72 编辑距离](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/editDiatance/editDiatance.js)
+
 * [844. 比较含退格的字符串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/backspaceStringCompare/backspaceStringCompare.js)
+
+动态规划
+
+* [72 编辑距离](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/editDiatance/editDiatance.js)
+* [5. 最长回文子串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/longest-palindromic-substring/longest-palindromic-substring.js)
+* [22. 括号生成](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/generate-parentheses/generate-parentheses.js)
+* [121. 买卖股票的最佳时机](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.js)
+* [70. 爬楼梯](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/climbing-stairs/climbing-stairs.js)
+* [53. 最大子数组和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/maximum-subarray/maximum-subarray.js)
+* [45. 跳跃游戏 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/jump-game-ii/jump-game-ii.js)
+* [96. 不同的二叉搜索树](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/unique-binary-search-trees/unique-binary-search-trees.js)
+* [279. 完全平方数](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/perfect-squares/perfect-squares.js)
+* [322. 零钱兑换](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/coin-change/coin-change.js)
+* [416. 分割等和子集](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/partition-equal-subset-sum/partition-equal-subset-sum.js)
+* [剑指 Offer 42. 连续子数组的最大和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lian-xu-zi-shu-zu-de-zui-da-he-lcof/lian-xu-zi-shu-zu-de-zui-da-he-lcof.js)
+
+
+贪心
+
+* [55. 跳跃游戏](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/jump-game/jump-game.js)
+* [45. 跳跃游戏 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/jump-game-ii/jump-game-ii.js)
+* [122. 买卖股票的最佳时机 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/best-time-to-buy-and-sell-stock-ii/best-time-to-buy-and-sell-stock-ii.js)
+
+
 
 ### 场景设计
 
