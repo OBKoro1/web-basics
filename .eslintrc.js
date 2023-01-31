@@ -21,7 +21,6 @@ module.exports = {
     'no-continue': 'off',
     'max-len': 'off',
     // 禁止使用 var
-    'no-var': 'error',
     'consistent-return': 'off',
     'no-param-reassign': 'off',
     'no-use-before-define': 'off',
@@ -43,5 +42,9 @@ module.exports = {
     'no-proto': 'off',
     'no-prototype-builtins': 'off',
     'prefer-promise-reject-errors': 'off',
+    'prefer-destructuring': 'off',
+    'no-multi-assign': 'off',
+    'no-bitwise': 'off',
+    'no-var': 'off',
   },
 }

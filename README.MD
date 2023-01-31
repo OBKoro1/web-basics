@@ -140,13 +140,87 @@
 * [322. 零钱兑换](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/coin-change/coin-change.js)
 * [416. 分割等和子集](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/partition-equal-subset-sum/partition-equal-subset-sum.js)
 * [剑指 Offer 42. 连续子数组的最大和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lian-xu-zi-shu-zu-de-zui-da-he-lcof/lian-xu-zi-shu-zu-de-zui-da-he-lcof.js)
+* [1049. 最后一块石头的重量 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/last-stone-weight-ii/last-stone-weight-ii.js)
+* [菲波那切数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
 
+* [494. 目标和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/target-sum/target-sum.js)
+* [746. 使用最小花费爬楼梯](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/min-cost-climbing-stairs/min-cost-climbing-stairs.js)
+* [198. 打家劫舍](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber/house-robber.js)
+* [213. 打家劫舍 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-ii/house-robber-ii.js)
+* [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
+* [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
+* [面试题 17.16. 按摩师](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/the-masseuse-lcci/the-masseuse-lcci.js)
+* [面试题 08.01. 三步问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/three-steps-problem-lcci/three-steps-problem-lcci.js)
+* [剑指 Offer 10- II. 青蛙跳台阶问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/qing-wa-tiao-tai-jie-wen-ti-lcof/qing-wa-tiao-tai-jie-wen-ti-lcof.js)
 
 贪心
 
 * [55. 跳跃游戏](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/jump-game/jump-game.js)
 * [45. 跳跃游戏 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/jump-game-ii/jump-game-ii.js)
 * [122. 买卖股票的最佳时机 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/best-time-to-buy-and-sell-stock-ii/best-time-to-buy-and-sell-stock-ii.js)
+* [面试题 16.17. 连续数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/contiguous-sequence-lcci/contiguous-sequence-lcci.js)
+
+
+dfs深度优先和bfs广度优先
+
+* [ 面试题13. 机器人的运动范围](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/ji-qi-ren-de-yun-dong-fan-wei-lcof/ji-qi-ren-de-yun-dong-fan-wei-lcof.js)
+* [494. 目标和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/target-sum/target-sum.js)
+* [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
+* [337. 打家劫舍 III](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-iii/house-robber-iii.js)
+* [351. 安卓系统手势解锁](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/android-unlock-patterns/android-unlock-patterns.js)
+
+栈
+
+* [20. 有效的括号](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/valid-parentheses/valid-parentheses.js)
+
+
+链表
+
+* [2. 两数相加](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/add-two-numbers/add-two-numbers.js)
+* [21. 合并两个有序链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-two-sorted-lists/merge-two-sorted-lists.js)
+
+
+树
+
+* [337. 打家劫舍 III](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-iii/house-robber-iii.js)
+
+
+双指针
+
+* [392. 判断子序列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/two-sum/two-sum.js)
+* [3. 无重复字符的最长子串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.js)
+* [11. 盛最多水的容器](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/container-with-most-water/container-with-most-water.js)
+* [15. 三数之和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/3sum/3sum.js)
+* [19. 删除链表的倒数第 N 个结点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.js)
+
+递归
+
+* [21. 合并两个有序链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-two-sorted-lists/merge-two-sorted-lists.js)
+
+
+
+哈希字典
+
+* [1. 两数之和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/is-subsequence/is-subsequence.js)
+
+
+规律
+
+* [118. 杨辉三角](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/pascals-triangle/pascals-triangle.js)
+* [菲波那切数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
+
+数学
+
+* [1025. 除数博弈](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/divisor-game/divisor-game.js)
+* [1227. 飞机座位分配概率](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/airplane-seat-assignment-probability/airplane-seat-assignment-probability.js)
+
+
+其他
+* [466. 统计重复个数](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/count-the-repetitions/count-the-repetitions.js)
+
+
+
+
 
 
 
@@ -185,8 +259,8 @@
 
 1. 它是用于一键生成文件头部注释并自动更新最后编辑人和编辑时间、函数注释自动生成和参数提取。
 2. 插件支持所有主流语言,功能强大，配置灵活方便，文档齐全，食用简单！
-3. 插件从2018年5月维护至今, 3K+ Star，关闭issue 300+
-4. 目前拥有250K+的用户，VSCode图表统计日安装用户100多-400多人，帮助用户养成良好的编码习惯，规范整个团队风格。
+3. 插件从2018年5月维护至今, 4K+ Star，关闭issue 500+
+4. 目前拥有38.7w的用户，VSCode图表统计日安装用户200多-500多人，帮助用户养成良好的编码习惯，规范整个团队风格。
 
 ![头部注释](https://raw.githubusercontent.com/OBKoro1/koro1FileHeader/master/images/example.gif)
 
