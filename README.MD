@@ -148,7 +148,6 @@
 * [198. 打家劫舍](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber/house-robber.js)
 * [213. 打家劫舍 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-ii/house-robber-ii.js)
 * [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
-* [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
 * [面试题 17.16. 按摩师](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/the-masseuse-lcci/the-masseuse-lcci.js)
 * [面试题 08.01. 三步问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/three-steps-problem-lcci/three-steps-problem-lcci.js)
 * [剑指 Offer 10- II. 青蛙跳台阶问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/qing-wa-tiao-tai-jie-wen-ti-lcof/qing-wa-tiao-tai-jie-wen-ti-lcof.js)
@@ -164,25 +163,35 @@
 dfs深度优先和bfs广度优先
 
 * [ 面试题13. 机器人的运动范围](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/ji-qi-ren-de-yun-dong-fan-wei-lcof/ji-qi-ren-de-yun-dong-fan-wei-lcof.js)
+* [200. 岛屿数量](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/number-of-islands/number-of-islands.js)
 * [494. 目标和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/target-sum/target-sum.js)
 * [64. 最小路径和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-path-sum/minimum-path-sum.js)
 * [337. 打家劫舍 III](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-iii/house-robber-iii.js)
 * [351. 安卓系统手势解锁](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/android-unlock-patterns/android-unlock-patterns.js)
 
+
 栈
 
 * [20. 有效的括号](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/valid-parentheses/valid-parentheses.js)
+* [71. 简化路径](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/simplify-path/simplify-path.js)
+* [394. 字符串解码](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/decode-string/decode-string.js)
 
 
 链表
 
 * [2. 两数相加](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/add-two-numbers/add-two-numbers.js)
 * [21. 合并两个有序链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-two-sorted-lists/merge-two-sorted-lists.js)
+* [19. 删除链表的倒数第 N 个结点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.js)
+* [24. 两两交换链表中的节点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/swap-nodes-in-pairs/swap-nodes-in-pairs.js)
+* [83. 删除排序链表中的重复元素](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-duplicates-from-sorted-list/remove-duplicates-from-sorted-list.js)
+* [206. 反转链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/reverse-linked-list/reverse-linked-list.js)
+* [剑指 Offer 22. 链表中倒数第k个节点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof.js)
 
 
 树
 
 * [337. 打家劫舍 III](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/house-robber-iii/house-robber-iii.js)
+* [104. 二叉树的最大深度](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/maximum-depth-of-binary-tree/maximum-depth-of-binary-tree.js)
 
 
 双指针
@@ -192,20 +201,47 @@ dfs深度优先和bfs广度优先
 * [11. 盛最多水的容器](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/container-with-most-water/container-with-most-water.js)
 * [15. 三数之和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/3sum/3sum.js)
 * [19. 删除链表的倒数第 N 个结点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.js)
+* [26. 删除有序数组中的重复项](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.js)
+* [83. 删除排序链表中的重复元素](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-duplicates-from-sorted-list/remove-duplicates-from-sorted-list.js)
 
 递归
 
 * [21. 合并两个有序链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-two-sorted-lists/merge-two-sorted-lists.js)
 
 
+回溯
+
+* [46. 全排列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/permutations/permutations.js)
+* [93. 复原 IP 地址](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/restore-ip-addresses/restore-ip-addresses.js)
+
 
 哈希字典
 
 * [1. 两数之和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/is-subsequence/is-subsequence.js)
+* [83. 删除排序链表中的重复元素](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-duplicates-from-sorted-list/remove-duplicates-from-sorted-list.js)
+
+算法
+
+* [146. LRU 缓存](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lru-cache/lru-cache.js)
+
+
+
+数组
+
+* [31. 下一个排列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/next-permutation/next-permutation.js)
+* [33. 搜索旋转排序数组](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/search-in-rotated-sorted-array/search-in-rotated-sorted-array.js)
+* [54. 螺旋矩阵](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/spiral-matrix/spiral-matrix.js)
+* [56. 合并区间](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-intervals/merge-intervals.js)
+* [215. 数组中的第K个最大元素](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/kth-largest-element-in-an-array/kth-largest-element-in-an-array.js)
+* [剑指 Offer 03. 数组中重复的数字](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/shu-zu-zhong-zhong-fu-de-shu-zi-lcof.js)
+* [670. 最大交换](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/maximum-swap/maximum-swap.js)
+* [179. 最大数](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/largest-number/largest-number.js)
+
 
 
 规律
 
+* [31. 下一个排列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/next-permutation/next-permutation.js)
 * [118. 杨辉三角](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/pascals-triangle/pascals-triangle.js)
 * [菲波那切数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
 
