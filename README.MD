@@ -124,8 +124,6 @@
 
 * [删除字符串中出现次数最少的字符](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/deleteLowerStr/index.js)
 
-* [844. 比较含退格的字符串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/backspaceStringCompare/backspaceStringCompare.js)
-
 动态规划
 
 * [72 编辑距离](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/editDiatance/editDiatance.js)
@@ -172,8 +170,10 @@ dfs深度优先和bfs广度优先
 * [351. 安卓系统手势解锁](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/android-unlock-patterns/android-unlock-patterns.js)
 * [102. 二叉树的层序遍历](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-level-order-traversal/binary-tree-level-order-traversal.js)
 * [207. 课程表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/course-schedule/course-schedule.js)
+* [210. 课程表 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/course-schedule-ii/course-schedule-ii.js)
 * [695. 岛屿的最大面积](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/max-area-of-island/max-area-of-island.js)
 * [417. 太平洋大西洋水流问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/pacific-atlantic-water-flow/pacific-atlantic-water-flow.js)
+* [463. 岛屿的周长](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/island-perimeter/island-perimeter.js)
 
 
 
@@ -208,6 +208,7 @@ dfs深度优先和bfs广度优先
 * [98. 验证二叉搜索树](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/validate-binary-search-tree/validate-binary-search-tree.js)
 * [236. 二叉树的最近公共祖先](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lowest-common-ancestor-of-a-binary-tree/lowest-common-ancestor-of-a-binary-tree.js)
 * [94. 二叉树的中序遍历](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-inorder-traversal/binary-tree-inorder-traversal.js)
+* [145. 二叉树的后序遍历](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-postorder-traversal/binary-tree-postorder-traversal.js)
 * [543. 二叉树的直径](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/diameter-of-binary-tree/diameter-of-binary-tree.js)
 * [662. 二叉树最大宽度](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/maximum-width-of-binary-tree/maximum-width-of-binary-tree.js)
 * [102. 二叉树的层序遍历](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-level-order-traversal/binary-tree-level-order-traversal.js)
@@ -222,6 +223,14 @@ dfs深度优先和bfs广度优先
 * [199. 二叉树的右视图](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-right-side-view/binary-tree-right-side-view.js)
 * [103. 二叉树的锯齿形层序遍历](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-zigzag-level-order-traversal/binary-tree-zigzag-level-order-traversal.js)
 * [112. 路径总和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/path-sum/path-sum.js)
+* [100. 相同的树](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/same-tree/same-tree.js)
+* [114. 二叉树展开为链表](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/flatten-binary-tree-to-linked-list/flatten-binary-tree-to-linked-list.js)
+* [257. 二叉树的所有路径](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-paths/binary-tree-paths.js)
+* [108. 将有序数组转换为二叉搜索树](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/convert-sorted-array-to-binary-search-tree/convert-sorted-array-to-binary-search-tree.js)
+* [563. 二叉树的坡度](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/binary-tree-tilt/binary-tree-tilt.js)
+* [617. 合并二叉树](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/merge-two-binary-trees/merge-two-binary-trees.js)
+* [559. N 叉树的最大深度](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/maximum-depth-of-n-ary-tree/maximum-depth-of-n-ary-tree.js)
+* [剑指 Offer 54. 二叉搜索树的第k大节点](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof.js)
 
 
 
@@ -236,6 +245,8 @@ dfs深度优先和bfs广度优先
 * [83. 删除排序链表中的重复元素](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/remove-duplicates-from-sorted-list/remove-duplicates-from-sorted-list.js)
 * [242. 有效的字母异位词](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/valid-anagram/valid-anagram.js)
 * [253. 会议室 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/meeting-rooms-ii/meeting-rooms-ii.js)
+* [860. 柠檬水找零](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lemonade-change/lemonade-change.js)
+* [605. 种花问题](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/can-place-flowers/can-place-flowers.js)
 
 递归
 
@@ -263,7 +274,11 @@ dfs深度优先和bfs广度优先
 * [232. 用栈实现队列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/implement-queue-using-stacks/implement-queue-using-stacks.js)
 * [503. 下一个更大元素 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/next-greater-element-ii/next-greater-element-ii.js)
 * [735. 行星碰撞](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/asteroid-collision/asteroid-collision.js)
-
+* [1441. 用栈操作构建数组](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/build-an-array-with-stack-operations/build-an-array-with-stack-operations.js)
+* [682. 棒球比赛](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/baseball-game/baseball-game.js)
+* [1249. 移除无效的括号](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-remove-to-make-valid-parentheses/minimum-remove-to-make-valid-parentheses.js)
+* [1046. 最后一块石头的重量](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/last-stone-weight/last-stone-weight.js)
+* [844. 比较含退格的字符串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/backspace-string-compare/backspace-string-compare.js)
 
 
 哈希字典
@@ -275,6 +290,10 @@ dfs深度优先和bfs广度优先
 算法
 
 * [146. LRU 缓存](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lru-cache/lru-cache.js)
+
+字符串
+
+* [1221. 分割平衡字符串](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/split-a-string-in-balanced-strings/split-a-string-in-balanced-strings.js)
 
 
 
@@ -297,12 +316,17 @@ dfs深度优先和bfs广度优先
 * [1640. 能否连接形成数组](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/check-array-formation-through-concatenation/check-array-formation-through-concatenation.js)
 * [1403. 非递增顺序的最小子序列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/minimum-subsequence-in-non-increasing-order/minimum-subsequence-in-non-increasing-order.js)
 * [253. 会议室 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/meeting-rooms-ii/meeting-rooms-ii.js)
+* [867. 转置矩阵](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/transpose-matrix/transpose-matrix.js)
+* [1122. 数组的相对排序](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/relative-sort-array/relative-sort-array.js)
+* [1030. 距离顺序排列矩阵单元格](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/matrix-cells-in-distance-order/matrix-cells-in-distance-order.js)
 
 规律
 
 * [31. 下一个排列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/next-permutation/next-permutation.js)
 * [118. 杨辉三角](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/pascals-triangle/pascals-triangle.js)
 * [菲波那切数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
+* [386. 字典序排数](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lexicographical-numbers/lexicographical-numbers.js)
+* [976. 三角形的最大周长](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/largest-perimeter-triangle/largest-perimeter-triangle.js)
 
 数学
 
