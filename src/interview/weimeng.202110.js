@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-10-11 15:08:17
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-11-04 16:25:05
- * FilePath     : /js-base/src/interview/weimeng.js
+ * LastEditTime : 2023-02-07 23:14:40
+ * FilePath     : /web-basics/src/interview/weimeng.202110.js
  * description  :  微盟一面
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -73,16 +73,16 @@ console.log('checkoutArr', JSON.stringify(toTreeArr))
 function timeout(fn, time) {
 }
 
-// const newFetch = timeout(fetch, 10000);
+// const newFetch = timeout(fetch, 10000)
 
 // newFetch('https://foo.com')
-//     .then((res) => res.json())
-//     .then((data) => {
-//         console.log('data', data);
-//     })
-//     .catch((e) => {
-//         console.log('超时', e);
-//     });
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log('data', data)
+//   })
+//   .catch((e) => {
+//     console.log('超时', e)
+//   })
 
 
 

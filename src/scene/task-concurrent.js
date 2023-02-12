@@ -2,7 +2,7 @@
  * Author       : OBKoro1
  * Date         : 2021-09-10 13:43:57
  * LastEditors  : OBKoro1
- * LastEditTime : 2022-12-14 21:27:48
+ * LastEditTime : 2023-02-09 16:36:42
  * FilePath     : /web-basics/src/scene/task-concurrent.js
  * description  : 异步任务，控制并发数目
  * https://juejin.cn/post/6912220538286899207
@@ -38,7 +38,7 @@ class TaskConcurrent {
   // 添加任务
   addTask(fn, ...params) {
     return new Promise((resolve, reject) => {
-      const taskObj = this.taskFactory(fn, params, resolve)
+      const taskObj = this.taskFactory(fn, params, resolve, reject)
       // 添加到栈尾
       this.taskQueue.push(taskObj)
       if (this.size !== this.max) {

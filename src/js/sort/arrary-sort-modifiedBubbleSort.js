@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 00:28:45
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-12 23:44:07
- * FilePath     : /js-base/src/js/arrary-sort-modifiedBubbleSort.js
+ * LastEditTime : 2023-02-09 14:33:00
+ * FilePath     : /web-basics/src/js/sort/arrary-sort-modifiedBubbleSort.js
  * description  : 冒泡排序
  * 大的值好像气泡慢慢升至表面
  * 思路: 双重遍历，相邻比较，前面的比后面的大就交换位置。
@@ -23,6 +23,7 @@ function modifiedBubbleSort(arr) {
       }
     }
   }
+  return arr
 }
 // 使用
 const oldArr = [3, 4, 5, 1, 2, 7, 8]

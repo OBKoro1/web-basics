@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 00:28:43
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-11-04 16:24:07
- * FilePath     : /js-base/src/js/arrary-sort-insertionSort.js
+ * LastEditTime : 2023-02-09 14:26:33
+ * FilePath     : /web-basics/src/js/sort/arrary-sort-insertionSort.js
  * description  : 插入排序
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -27,6 +27,7 @@ function insertionSort(arr) {
     // 遍历结束前面的值都比插入值大
     arr[j] = temp
   }
+  return arr
 }
 
 // 使用

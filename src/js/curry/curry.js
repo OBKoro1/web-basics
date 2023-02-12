@@ -2,8 +2,8 @@
  * Author       : OBKoro1
  * Date         : 2021-07-30 15:03:35
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-09-11 17:44:22
- * FilePath     : /js-base/src/js/curry.js
+ * LastEditTime : 2023-02-08 13:09:34
+ * FilePath     : /web-basics/src/js/curry/curry.js
  * description  : 函数柯里化
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -11,7 +11,7 @@
 
 // 思路: 比较函数参数，不足返回函数等待接收参数，够了就执行
 function curry(fn, ...args) {
-  //  比较参数
+  //  比较参数数量
   if (args.length < fn.length) {
     //  返回函数 等待接收参数
     return function (...args2) {

@@ -76,7 +76,7 @@ function compose(middleware) {
 //       let fn = middleware[i] // 获取函数
 //       if (i === middleware.length) fn = next // 最后执行的next
 //       if (!fn) return Promise.resolve() // 没有item
-//       const nextFn = dispatch.bind(null, i + 1) // 绑定下一个next的fn
+//       const nextFn = dispatch.bind(context, i + 1) // 绑定下一个next的fn
 //       const p = fn(context, nextFn) // 执行当前迭代的next, 遇到下一次迭代的nextFn 执行nextFn
 //       try {
 //         return Promise.resolve(p) // fn可能是个promise，需要resolve来等待一下

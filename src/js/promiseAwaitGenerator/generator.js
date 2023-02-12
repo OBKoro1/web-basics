@@ -3,8 +3,8 @@
  * Author       : OBKoro1
  * Date         : 2021-08-06 02:04:14
  * LastEditors  : OBKoro1
- * LastEditTime : 2022-01-12 15:41:08
- * FilePath     : /js-base/src/js/es6/generator.js
+ * LastEditTime : 2023-02-09 11:38:22
+ * FilePath     : /web-basics/src/js/promiseAwaitGenerator/generator.js
  * description  : generator 实现原理
  * koroFileheader VSCode插件
  * Copyright (c) 2021 by OBKoro1, All Rights Reserved.
@@ -66,7 +66,7 @@ const gen = function (activeFunction) {
   return {
     next() {
       // 根据状态 获取返回值 undefined 或者 下一次执行结果
-      const value = context.done ? undefined : gen$(context)
+      const value = context.done ? undefined : activeFunction(context)
       return {
         value,
         done: context.done, // 执行状态
@@ -76,7 +76,7 @@ const gen = function (activeFunction) {
 }
 
 // 测试使用
-const g = gen()
+const g = gen(gen$)
 const res1 = g.next() // {value: "result1", done: false}
 const res2 = g.next() // {value: "result2", done: false}
 const res3 = g.next() // {value: "result3", done: false}
