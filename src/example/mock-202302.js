@@ -122,6 +122,13 @@ function deepClone(obj, map = new Map()) {
   return copy
 }
 
+// 将传入的对象作为新对象原型
+function myCreate(obj) {
+  function F() {}
+  F.prototype = obj
+  return new F()
+}
+
 
 function father(name) {
   this.name = name
