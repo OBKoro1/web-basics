@@ -139,7 +139,7 @@
 * [416. 分割等和子集](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/partition-equal-subset-sum/partition-equal-subset-sum.js)
 * [剑指 Offer 42. 连续子数组的最大和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/lian-xu-zi-shu-zu-de-zui-da-he-lcof/lian-xu-zi-shu-zu-de-zui-da-he-lcof.js)
 * [1049. 最后一块石头的重量 II](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/last-stone-weight-ii/last-stone-weight-ii.js)
-* [菲波那切数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
+* [斐波纳契数列](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/fei-bo-na-qi-shu-lie-lcof/fei-bo-na-qi-shu-lie-lcof.js)
 
 * [494. 目标和](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/target-sum/target-sum.js)
 * [746. 使用最小花费爬楼梯](https://github.com/OBKoro1/web-basics/blob/main/src/leetCode/min-cost-climbing-stairs/min-cost-climbing-stairs.js)
