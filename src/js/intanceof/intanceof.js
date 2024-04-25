@@ -13,15 +13,15 @@
 
 // 思路：左边变量的原型链上 有 右边变量的原型， 说明左边对象是继承右边对象的。
 function instanceOf(left, right) {
-  let leftValue = left.__proto__;
-  const rightValue = right.prototype;
+  let leftValue = left.__proto__
+  const rightValue = right.prototype
   while (true) {
     if (leftValue === null) {
-      return false; // 左边变量的原型链上没找到
+      return false // 左边变量的原型链上没找到
     }
     if (leftValue === rightValue) {
-      return true; // 右边变量的原型在左边变量的原型链上
+      return true // 右边变量的原型在左边变量的原型链上
     }
-    leftValue = leftValue.__proto__; // 找下层原型
+    leftValue = leftValue.__proto__ // 找下层原型
   }
 }
